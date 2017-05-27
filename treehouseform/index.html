@@ -7,27 +7,32 @@
 
 <body>
 <form action="#" method="POST" name="my_form">
-  <input type="text" name="username" required><br>
-  <input type="password" name="password" required><br>
-  <input type="radio" name="gender" value="Male">Male<br>
-  <input type="radio" name="gender" value="Female">Female<br>
-  <input type="checkbox" name="foods" value="Grapes">Grapes<br>
-  <input type="checkbox" name="foods" value="Apples">Apples<br>
-  <input type="checkbox" name="foods" value="Bananas">Bananas<br>
-
+  <fieldset>
+    <legend>Important Information</legend>
+    <input type="text" name="username"><br>
+    <input type="password" name="password"><br>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br>
+    <input type="checkbox" name="foods" value="Grapes">Grapes<br>
+    <input type="checkbox" name="foods" value="Apples">Apples<br>
+    <input type="checkbox" name="foods" value="Bananas">Bananas<br>
+  </fieldset>
 <textarea name="essay" rows="10" cols="30"></textarea><br>
 
 <select>
-<option value="North America">North America</option>
-<option value="South America">South America</option>
-<option value="Europe">Europe</option>
+  <optgroup label="Americas">
+    <option value="North America">North America</option>
+    <option value="South America">South America</option>
+  </optgroup>
+  <optgroup label="Eurasia">
+    <option value="Europe">Europe</option>
+    <option value="Asia">Asia</option>
+  </optgroup>
 <option value="Africa">Africa</option>
-<option value="Asia">Asia</option>
 <option value="Australia">Australia</option>
 <option value="Antarctica">Antarctica</option>
-
-</nav></option>
 </select>
+<br>
 
   <input type="submit" value="Onwards!">
 </form>
